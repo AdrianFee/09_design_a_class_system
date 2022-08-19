@@ -55,6 +55,6 @@ RSpec.describe "Diary Integration" do
         diary.add_entry(diary_entry)
         diary.add_entry(diary_entry_2)
         result = diary.select_based_on_title("Rainy")
-        expect(result).to eq diary_entry
+        expect(result).to eq [diary_entry]
     end
 end

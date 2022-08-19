@@ -9,7 +9,7 @@ class DiaryEntries
     end
 
     def entry
-    @entry
+        @entry
     end
 
     def get_contact

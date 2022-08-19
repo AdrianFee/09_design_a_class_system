@@ -28,8 +28,9 @@ class Diary
     end 
 
     def select_based_on_title(keyword)
-        binding.irb
-        @entries_list.each {|entries| entries.entry}
+        @entries_list.select do |en|
+            en.entry.include?(keyword)
+        end 
     end 
 
 end
