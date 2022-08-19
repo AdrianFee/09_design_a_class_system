@@ -119,6 +119,14 @@ class DiaryEntries
         def initialize(title, entry) # title and entry are strings
         end 
 
+        def title
+        
+        end
+
+        def entry
+        
+        end
+
         def get_contact # return phone number from the entry
         end 
 
@@ -265,7 +273,7 @@ expect(result).to eq false
 
 #    DiaryEntries
 
-diary_entry = DiaryEntries.new("My new friend", "Rainy Monday and number was 07752377403")
+diary_entry = DiaryEntries.new("My new friend", "Rainy Monday and number was 234 07752377403")
 result = diary_entry.get_contact
 expect(result).to eq "07752377403"
 
